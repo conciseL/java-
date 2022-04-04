@@ -1,0 +1,13 @@
+server:
+  port: 8081
+spring:
+  redis:
+    database: 3
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+    lettuce:
+      pool:
+        min-idle: 0
+    timeout: 5000
